@@ -37,9 +37,9 @@
   }
 } */
 
-*{
+/* *{
   margin-top: 1px;
-}
+} */
 .container{
   display: flex;
   margin-top: 10px;
