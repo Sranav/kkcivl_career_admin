@@ -16,10 +16,12 @@ function Sidebar() {
             <div className="sidebar_menu">
                 <h3 className="sidebar_title">Dashboard</h3>
                 <ul className="sidebar_list">
+                <Link to="/" style={{ textDecoration: 'none' }}>
                     <li className="sidebar_list_item active">
-                        <LineStyleIcon className='sidebar-icon'/><Link to="/">
-                        Home</Link>
+                    <LineStyleIcon className='sidebar-icon'/>
+                        Home
                     </li>
+                    </Link>
                     {/* <li className="sidebar_list_item">
                         <TimelineIcon className='sidebar-icon'/>
                         Anlytics
@@ -28,14 +30,18 @@ function Sidebar() {
                         <TrendingUpIcon className='sidebar-icon'/>
                         Sales
                     </li> */}
+                    <Link to="users" style={{ textDecoration: 'none' }}>
                     <li className="sidebar_list_item ">
-                        <PersonOutlineIcon className='sidebar-icon'/><Link to="users">
-                        User</Link>
+                        <PersonOutlineIcon className='sidebar-icon'/>
+                        User Job Creation
                     </li>
+                    </Link>
+                    <Link to="employee" style={{ textDecoration: 'none' }}>
                     <li className="sidebar_list_item ">
-                        <PersonOutlineIcon className='sidebar-icon'/><Link to="employee">
-                        Employee Details</Link>
+                     <PersonOutlineIcon className='sidebar-icon'/>
+                        Candidate Details
                     </li>
+                    </Link>
                 </ul>
             </div>
             {/* <div className="sidebar_menu">

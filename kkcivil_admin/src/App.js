@@ -5,10 +5,12 @@ import Home from "./pages/home/Home";
 import { BrowserRouter as Router, Routes, Route,Link } from "react-router-dom";
 import UserList from "./pages/home/userlis/UserList";
 import EmployeeList from "./pages/home/employee/EmployeeList";
+import AdminLogin from "./components/AdminLogin/AdminLogin";
 
 function App() {
   return (
     <Router>
+     
       <Topbar />
       <div className="container">
         <Sidebar />
@@ -25,9 +27,12 @@ function App() {
           <Route path="/employee" element={<EmployeeList/>}>
           
           </Route>
+          
         </Routes>
         
       </div>
+      
+      
     </Router>
   );
 }
